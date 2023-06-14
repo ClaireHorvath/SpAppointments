@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>SpaApplication</title>
+    <link rel="stylesheet" href="./css/home.css" type="text/css">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+</head>
+<body>
+<nav>
+    <ol>
+        <li class="crumb"><a href="./home.html">User Log In</a></li>
+        <li class="crumb"><a href="./spaservices.html">Spa Services</a></li>
+        <li class="crumb"><a href="./makeappointment.html">Book Appointment</a></li>
+    </ol>
+</nav>
+
+<header>
+    <h1>Welcome to the Spa</h1>
+</header>
+
+<form id="log-in">
+    <h3>Log In:</h3>
+    <input placeholder="Username" id="new-username"/>
+    <input placeholder="Password" id="new-password"/>
+    <button type="submit">Enter</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./javascript/home.js" type="application/javascript"></script>
+</body>
+</html>

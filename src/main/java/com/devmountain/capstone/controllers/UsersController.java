@@ -20,12 +20,12 @@ public class UsersController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostMapping("/register")
-    public List<String> addUsers(@RequestBody UsersDto usersDto) {
-        String passHash = passwordEncoder.encode(usersDto.getPassword());
-        usersDto.setPassword(passHash);
-        return usersService.addUsers(usersDto);
-    }
+//    @PostMapping("/register")
+//    public List<String> addUsers(@RequestBody UsersDto usersDto) {
+//        String passHash = passwordEncoder.encode(usersDto.getPassword());
+//        usersDto.setPassword(passHash);
+//        return usersService.addUsers(usersDto);
+//    }
 
     @PostMapping("/login")
     public List<String> usersLogin(@RequestBody UsersDto usersDto) {

@@ -2,6 +2,7 @@ package com.devmountain.capstone.services;
 
 import com.devmountain.capstone.dtos.MakeAppointmentDto;
 import com.devmountain.capstone.dtos.SpaServicesDto;
+import com.devmountain.capstone.entities.MakeAppointment;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

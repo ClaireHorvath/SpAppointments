@@ -31,10 +31,6 @@ public class SpaServices {
     public double price;
 
 
-//    @OneToMany(mappedBy = "makeAppointment", fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-//    @JsonManagedReference
-//    private Set<SpaServices> spaServicesSet = new HashSet<>();
-
     public SpaServices(SpaServicesDto spaServicesDto) {
         if (spaServicesDto.getService() != null) {
             this.service = spaServicesDto.getService();

@@ -36,16 +36,6 @@ public class MakeAppointmentServiceImpl implements MakeAppointmentService {
         return null;
     }
 
-//    @Override
-//    @Transactional
-//    public void updateAppointment(MakeAppointmentDto makeAppointmentDto) {
-//        Optional<MakeAppointment> makeAppointmentOptional = makeAppointmentRepository.findById(makeAppointmentDto.getUserId());
-//        makeAppointmentOptional.ifPresent(makeAppointment -> {
-//            makeAppointment.setSpaServices(makeAppointmentDto.getSpaServices());
-//            makeAppointmentRepository.saveAndFlush(makeAppointment);
-//        });
-//    }
-
     @Override
     @Transactional
     public void createAppointment(MakeAppointmentDto makeAppointmentDto, Long usersId) {
